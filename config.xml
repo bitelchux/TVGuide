@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.pointabout.72C8DE42"
+        version   = "3.0.0">
+    <name>Tv Listings USA</name>
+
+    <description>
+      Usa Tv listings and guide, by hour, by channel, by genre... with favourite list and time zone selection...and FREE!
+    </description>
+    <author href="http://bitelchux.com" email="bitelchux@gmail.com">
+        bitelchux
+    </author>
+  <icon src="icon.png" />
+  <gap:splash src="splash.png" />
+  <access origin="*" />
+  <preference name="target-device" value="universal" />
+  <preference name="stay-in-webview" value="false" />
+  <preference name="permissions" value="none"/>
+    <feature name="http://api.phonegap.com/1.0/network" />
+
+    <preference name="phonegap-version" value="2.0.0" />
+    <preference name="orientation"      value="default" />    
+    <preference name="fullscreen"       value="true" />
+
+    <icon src="icon.png" />
+</widget>

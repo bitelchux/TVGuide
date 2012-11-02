@@ -9,27 +9,6 @@
 <meta name="language" content="en" /> 
 <meta name="robots" content="All" />
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="block.js"></script>
-<script type="text/javascript" src="mio.js"></script>
-<script>
-    function irazod(cual) {
-        var cual = cual.options[cual.options.selectedIndex].value;        
-        espera();
-        $('#conte').load("http://dailyhoroscopesmobi.com/iphoneindex.php?" + cual, function () {     
-            $.unblockUI();
-        });
-    }
-    function cbset(cual) {
-        cb.options.selectedIndex=cual
-    }
-    $(document).ready(function () {
-    /*
-        $("a").click(function () {
-
-        });
-    */
-    });
-</script>
 <style>
 *{
 font-family:Georgia, Helvetica, Arial, Sans-Serif;;
@@ -260,90 +239,12 @@ text-align:center;
 </head>
 <body>
 <div id="page" style="display:none">
-    <div class="header"> 
-    <br />
-    <h1>Daily Horoscope digest</h1> 
-    </div><!-- /header --> 
- 
-
-    <p align="center" style="text-align:center">
-    <select onchange="irazod(this)" id="cb" style="width:80%">
-    <option value="num=0&de-hoy-para=aries">Aries</option>
-    <option value="num=1&de-hoy-para=taurus">Taurus</option>
-    <option value="num=2&de-hoy-para=gemini">Gemini</option>
-    <option value="num=3&de-hoy-para=cancer">Cancer</option>
-    <option value="num=4&de-hoy-para=leo">Leo</option>
-    <option value="num=5&de-hoy-para=virgo">Virgo</option>
-    <option value="num=6&de-hoy-para=libra">Libra</option>
-    <option value="num=7&de-hoy-para=scorpio">Scorpio</option>
-    <option value="num=8&de-hoy-para=sagittarius">Sagittarius</option>
-    <option value="num=9&de-hoy-para=capricorn">Capricorn</option>
-    <option value="num=10&de-hoy-para=aquarius">Aquarius</option>
-    <option value="num=11&de-hoy-para=pisces">Pisces</option>
-    </select>
-    </p>
-    <div id="conte">
-    <table width="90%">
-    <tr>
-    <td width="25%">
-    <div onclick="cbset(0);espera();$('#conte').load('http://dailyhoroscopesmobi.com/iphoneindex.php?num=0&de-hoy-para=aries',function() { $.unblockUI();})">
-    <img src="0.png"><br />Aries</div>
-    </td>
-    <td width="25%">
-    <div onclick="cbset(1);espera();$('#conte').load('http://dailyhoroscopesmobi.com/iphoneindex.php?num=1&de-hoy-para=taurus'),function() { $.unblockUI();})">
-    <img src="1.png"><br />Taurus</div>
-    </td>
-    <td width="25%">
-    <div onclick="cbset(2);espera();$('#conte').load('http://dailyhoroscopesmobi.com/iphoneindex.php?num=2&de-hoy-para=gemini',function() { $.unblockUI();})">
-    <img src="2.png"><br />Gemini</div>
-    </td>
-    <td width="25%">
-    <div onclick="cbset(3);espera();$('#conte').load('http://dailyhoroscopesmobi.com/iphoneindex.php?num=3&de-hoy-para=cancer',function() { $.unblockUI();})">
-    <img src="3.png"><br />Cancer</div>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <div onclick="cbset(4);espera();$('#conte').load('http://dailyhoroscopesmobi.com/iphoneindex.php?num=4&de-hoy-para=leo',function() { $.unblockUI();})">
-    <img src="4.png"><br />Leo</div>
-    </td>
-    <td>
-    <div onclick="cbset(5);espera();$('#conte').load('http://dailyhoroscopesmobi.com/iphoneindex.php?num=5&de-hoy-para=virgo',function() { $.unblockUI();})">
-    <img src="5.png"><br />Virgo</div>
-    </td>
-    <td>
-    <div onclick="cbset(6);espera();$('#conte').load('http://dailyhoroscopesmobi.com/iphoneindex.php?num=6&de-hoy-para=libra',function() { $.unblockUI();})">
-    <img src="6.png"><br />Libra</div>
-    </td>
-    <td>
-    <div onclick="cbset(7);espera();$('#conte').load('http://dailyhoroscopesmobi.com/iphoneindex.php?num=7&de-hoy-para=scorpio',function() { $.unblockUI();})">
-    <img src="7.png"><br />Scorpio</div>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <div onclick="cbset(8);espera();$('#conte').load('http://dailyhoroscopesmobi.com/iphoneindex.php?num=8&de-hoy-para=sagittarius',function() { $.unblockUI();})">
-    <img src="8.png"><br />Sagittarius</div>
-    </td>
-    <td>
-    <div onclick="cbset(9);espera();$('#conte').load('http://dailyhoroscopesmobi.com/iphoneindex.php?num=9&de-hoy-para=capricorn',function() { $.unblockUI();})">
-    <img src="9.png"><br />Capricorn</div>
-    </td>
-    <td>
-    <div onclick="cbset(10);espera();$('#conte').load('http://dailyhoroscopesmobi.com/iphoneindex.php?num=10&de-hoy-para=aquarius',function() { $.unblockUI();})">
-    <img src="10.png"><br />Aquarius</div>
-    </td>
-    <td>
-    <div onclick="cbset(11);espera();$('#conte').load('http://dailyhoroscopesmobi.com/iphoneindex.php?num=11&de-hoy-para=pisces',function() { $.unblockUI();})">
-    <img src="11.png"><br />Pisces</div>
-
-    <div onclick="cbset(11);espera();$('#conte').load('http://html5demos.com/nav-online',function() { $.unblockUI();})">html5</div>
-    </td>
-    </tr>
-    </table>
-    </div>
-    <br/><br/>
-    <br/>    
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <h1>Loading please wait...</h1>
 </div>
 <div id="errorcon" style="display:none;text-align:center">
     
@@ -365,6 +266,7 @@ text-align:center;
             $("#testcon").hide();
             $("#errorcon").hide();
             $("#page").show();
+            document.location.href='http://todayontv.mobi/'
         } else {
         
             $("#testcon").hide();
