@@ -18,7 +18,7 @@
   <preference name="stay-in-webview" value="false" />
   <preference name="permissions" value="none"/>
     <feature name="http://api.phonegap.com/1.0/network" />
-
+  <preference name="stay-in-webview" value="true" />
     <preference name="phonegap-version" value="2.0.0" />
     <preference name="orientation"      value="default" />    
     <preference name="fullscreen"       value="true" />
